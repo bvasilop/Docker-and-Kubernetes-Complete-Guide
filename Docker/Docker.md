@@ -21,3 +21,11 @@
 * An instance of an image. You can kind of think of it as being like a running program.
 * A program with its own isolated set of hardware resources.
 * It kind of has its own little set or its own little space of memory has its own little space of networking technology and its own little space of hard drive space as well.
+
+## Operating System Containers
+
+![Operating System Container](./OS.png?raw=true "Title")
+
+### Kernel
+
+* The kernel is a running software process that governs access between all the programs that are running on your computer and all the physical hardware that is connected to your computer as well.
