@@ -29,3 +29,21 @@
 ### Kernel
 
 * The kernel is a running software process that governs access between all the programs that are running on your computer and all the physical hardware that is connected to your computer as well.
+
+### Name Spacing
+
+![Name Spacing](./Namespacing.png?raw=true "Title")
+
+* We can look at all of the different hardware resources connected to our computer and we can essentially
+segment out portions of those resources so we could create a segment of our hard disk specifically dedicated
+to housing the resources we need.
+
+* We are allowed to isolate resources per a process or a group of processes and we essentially saying that any time a particular process asks for a resource we're going to direct it to this one little specific area of the given piece of hardware.
+* It can be also used for software elements as well.
+
+### Control Groups
+
+* Can be used to limit the amount of resources that a particular process can use.
+* Can be used to limit the amount of memory that a process can use, the amount of CPQ, the amount of hard drive input input, or the input output and the amount of network bandwidth as well.
+
+![Name Spacing2](./Namespacing2.png?raw=true "Title")
