@@ -21,6 +21,8 @@
 * An instance of an image. You can kind of think of it as being like a running program.
 * A program with its own isolated set of hardware resources.
 * It kind of has its own little set or its own little space of memory has its own little space of networking technology and its own little space of hard drive space as well.
+* a container is really a process or a set of processes that have a grouping of resources specifically
+assigned to it.
 
 ## Operating System Containers
 
@@ -47,3 +49,9 @@ to housing the resources we need.
 * Can be used to limit the amount of memory that a process can use, the amount of CPQ, the amount of hard drive input input, or the input output and the amount of network bandwidth as well.
 
 ![Name Spacing2](./Namespacing2.png?raw=true "Title")
+
+### Image (File System Snapshot)
+
+![Image and Containers](./Image-Container.png?raw=true "Title")
+
+* Images contain snapshots (essentially kind of like a copy paste of a very specific set of directories or files) and startup commands.
