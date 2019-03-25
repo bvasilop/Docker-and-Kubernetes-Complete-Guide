@@ -54,4 +54,20 @@ to housing the resources we need.
 
 ![Image and Containers](./Image-Container.png?raw=true "Title")
 
-* Images contain snapshots (essentially kind of like a copy paste of a very specific set of directories or files) and startup commands.
+* Images contain snapshots (essentially kind of like a copy paste of a very specific set of directories or files) and very specific startup commands.
+
+### Namespacing and Control Groups (cgroups)
+
+* Specifically belong to Linux (not windows or macOS)
+
+### Linux VM hosting Different Containers
+
+![Linux Virtual Machine](./Linux-VM.png?raw=true "Title")
+
+### Creating and Running a Container from an Image
+
+![Running images](./Creating-Running-Image.png?raw=true "Title")
+
+![Running hello world command](./Running-Hello-World.png?raw=true "Title")
+
+![Overriding default run commands](./Overriding-Default-Run.png?raw=true "Title")
