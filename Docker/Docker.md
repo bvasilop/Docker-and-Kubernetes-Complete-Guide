@@ -60,14 +60,30 @@ to housing the resources we need.
 
 * Specifically belong to Linux (not windows or macOS)
 
-### Linux VM hosting Different Containers
+### Linux VM hosting different containers
 
 ![Linux Virtual Machine](./Linux-VM.png?raw=true "Title")
 
-### Creating and Running a Container from an Image
+### Creating and running a container from an Image
 
 ![Running images](./Creating-Running-Image.png?raw=true "Title")
 
+### Running a hello world image
+
 ![Running hello world command](./Running-Hello-World.png?raw=true "Title")
 
+### Overriding default run commands
+
 ![Overriding default run commands](./Overriding-Default-Run.png?raw=true "Title")
+
+### Overriding BusyBox default run commands
+
+![Overriding default run commands](./BusyBox-Override.png?raw=true "Title")
+
+### List all running containers
+
+![List all running containers](./List-All-Running-Containers.png?raw=true "Title")
+
+### Docker run = Docker create + Docker Start
+
+![List all running containers](./Docker-Run-Create.png?raw=true "Title")
