@@ -21,7 +21,7 @@
 * An instance of an image. You can kind of think of it as being like a running program.
 * A program with its own isolated set of hardware resources.
 * It kind of has its own little set or its own little space of memory has its own little space of networking technology and its own little space of hard drive space as well.
-* a container is really a process or a set of processes that have a grouping of resources specifically
+* A container is really a process or a set of processes that have a grouping of resources specifically
 assigned to it.
 
 ## Operating System Containers
@@ -64,6 +64,8 @@ to housing the resources we need.
 
 ![Linux Virtual Machine](./Linux-VM.png?raw=true "Title")
 
+## Container Lifecycle
+
 ### Creating and running a container from an Image
 
 ![Running images](./Creating-Running-Image.png?raw=true "Title")
@@ -84,6 +86,28 @@ to housing the resources we need.
 
 ![List all running containers](./List-All-Running-Containers.png?raw=true "Title")
 
+### Container Status
+
+![List all running containers](./Container-Status.png?raw=true "Title")
+
 ### Docker run = Docker create + Docker Start
 
 ![List all running containers](./Docker-Run-Create.png?raw=true "Title")
+
+![List all running containers](./Docker-Start-ID.png?raw=true "Title")
+
+### Creating and starting a container
+
+![List all running containers](./Start-Create-Container.png?raw=true "Title")
+
+![List all running containers](./Start-Command.png?raw=true "Title")
+
+* The `-a` specifically it is attached to the container  and watch for the output coming from it and printed out at my terminal.
+
+![Reference Container](./Reference-Container.png?raw=true "Title")
+
+* `docker run`  takes our file system snapshot and gets a reference to it inside the container.
+
+![Reference Container](./Startup-Command.png?raw=true "Title")
+
+* `echo hi there` starts out as startup command in Busybox Image and makes its way into the running processes in the container.
