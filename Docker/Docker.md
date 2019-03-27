@@ -1,14 +1,14 @@
 # Docker
 
-![Docker1](./Docker1.png?raw=true "Title")
+![Docker1](images/Docker1.png?raw=true "Title")
 
 ## Why use Docker?
 
 * Makes life really easy for installing and running software without having to go through a whole bunch of setup or installation of dependencies.
 
-![Docker1](./Docker2.png?raw=true "Title")
+![Docker1](images/Docker2.png?raw=true "Title")
 
-![Docker1](./Docker3.png?raw=true "Title")
+![Docker1](images/Docker3.png?raw=true "Title")
 
 ### Image
 
@@ -26,7 +26,7 @@ assigned to it.
 
 ## Operating System Containers
 
-![Operating System Container](./OS.png?raw=true "Title")
+![Operating System Container](images/OS.png?raw=true "Title")
 
 ### Kernel
 
@@ -34,7 +34,7 @@ assigned to it.
 
 ### Name Spacing
 
-![Name Spacing](./Namespacing.png?raw=true "Title")
+![Name Spacing](images/Namespacing.png?raw=true "Title")
 
 * We can look at all of the different hardware resources connected to our computer and we can essentially
 segment out portions of those resources so we could create a segment of our hard disk specifically dedicated
@@ -48,11 +48,11 @@ to housing the resources we need.
 * Can be used to limit the amount of resources that a particular process can use.
 * Can be used to limit the amount of memory that a process can use, the amount of CPQ, the amount of hard drive input input, or the input output and the amount of network bandwidth as well.
 
-![Name Spacing2](./Namespacing2.png?raw=true "Title")
+![Name Spacing2](images/Namespacing2.png?raw=true "Title")
 
 ### Image (File System Snapshot)
 
-![Image and Containers](./Image-Container.png?raw=true "Title")
+![Image and Containers](images/Image-Container.png?raw=true "Title")
 
 * Images contain snapshots (essentially kind of like a copy paste of a very specific set of directories or files) and very specific startup commands.
 
@@ -62,52 +62,66 @@ to housing the resources we need.
 
 ### Linux VM hosting different containers
 
-![Linux Virtual Machine](./Linux-VM.png?raw=true "Title")
+![Linux Virtual Machine](images/Linux-VM.png?raw=true "Title")
 
 ## Container Lifecycle
 
 ### Creating and running a container from an Image
 
-![Running images](./Creating-Running-Image.png?raw=true "Title")
+![Running images](images/Creating-Running-Image.png?raw=true "Title")
 
 ### Running a hello world image
 
-![Running hello world command](./Running-Hello-World.png?raw=true "Title")
+![Running hello world command](images/Running-Hello-World.png?raw=true "Title")
 
 ### Overriding default run commands
 
-![Overriding default run commands](./Overriding-Default-Run.png?raw=true "Title")
+![Overriding default run commands](images/Overriding-Default-Run.png?raw=true "Title")
 
 ### Overriding BusyBox default run commands
 
-![Overriding default run commands](./BusyBox-Override.png?raw=true "Title")
+![Overriding busybox](images/BusyBox-Override.png?raw=true "Title")
 
 ### List all running containers
 
-![List all running containers](./List-All-Running-Containers.png?raw=true "Title")
+![List all running containers](images/List-All-Running-Containers.png?raw=true "Title")
 
 ### Container Status
 
-![List all running containers](./Container-Status.png?raw=true "Title")
+![Container status](images/Container-Status.png?raw=true "Title")
 
 ### Docker run = Docker create + Docker Start
 
-![List all running containers](./Docker-Run-Create.png?raw=true "Title")
+![Docker run create](images/Docker-Run-Create.png?raw=true "Title")
 
-![List all running containers](./Docker-Start-ID.png?raw=true "Title")
+![Docker start ID](images/Docker-Start-ID.png?raw=true "Title")
+* In order to actually see information being printed out from the container we had to add `-a`
 
 ### Creating and starting a container
 
-![List all running containers](./Start-Create-Container.png?raw=true "Title")
+![Start Create Containers](images/Start-Create-Container.png?raw=true "Title")
 
-![List all running containers](./Start-Command.png?raw=true "Title")
+![Start Command](images/Start-Command.png?raw=true "Title")
 
 * The `-a` specifically it is attached to the container  and watch for the output coming from it and printed out at my terminal.
 
-![Reference Container](./Reference-Container.png?raw=true "Title")
+![Reference Container](images/Reference-Container.png?raw=true "Title")
 
 * `docker run`  takes our file system snapshot and gets a reference to it inside the container.
 
-![Reference Container](./Startup-Command.png?raw=true "Title")
+![Startup Command](images/Startup-Command.png?raw=true "Title")
 
 * `echo hi there` starts out as startup command in Busybox Image and makes its way into the running processes in the container.
+
+### Deleting containers completely
+
+* To completely delete a container, run `docker system prune`
+
+![Prune](images/Prune.png?raw=true "Title")
+
+### Getting logs from a container
+
+![Logs](images/Logs.png?raw=true "Title")
+* Run `docker create busybox echo hi there` then grab returned id `2d397cab7ed77202385b9ca279fafe72c4f8867c24aaa7474124b7390837d638`.
+* It will then take that ID and run `docker start` and `paste the ID` that starts up the container it executes. `echo Hi there` inside of it and then it immediately exits.
+* To get logs, we run `docker logs 2d397cab7ed77202385b9ca279fafe72c4f8867c24aaa7474124b7390837d638`
