@@ -1,14 +1,12 @@
 # Docker and Kubernetes the Complete Guide
 
-## Notes by: Daniel Mapar
-
 * **IMPORTANT**: I am taking brief notes from section 1 to 6. For a complete docker tutorial click [here](https://github.com/danielmapar/DockerTutorial)
 
 ## Section 1 to 6
 
 ![multi-build](./images/intro.PNG)
 
-## **Section 7**: Continuos Integration and Deployment with AWS
+## **Section 7**: Continuous Integration and Deployment with AWS
 
 * `docker attach ${containerId}`: This attaches the stdin, stout and sterr from the container to the host machine
 

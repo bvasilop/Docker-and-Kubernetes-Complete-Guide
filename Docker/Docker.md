@@ -125,3 +125,11 @@ to housing the resources we need.
 * Run `docker create busybox echo hi there` then grab returned id `2d397cab7ed77202385b9ca279fafe72c4f8867c24aaa7474124b7390837d638`.
 * It will then take that ID and run `docker start` and `paste the ID` that starts up the container it executes. `echo Hi there` inside of it and then it immediately exits.
 * To get logs, we run `docker logs 2d397cab7ed77202385b9ca279fafe72c4f8867c24aaa7474124b7390837d638`
+
+### Stopping a container
+
+![Stop](images/Stop.png?raw=true "Title")
+
+* In order to stop a container that seems to be running amok on its own we can issue either the `docker stop` command or the `docker kill` command. `docker kill` is more definite and quicker but `docker stop` is recommended defaults to `docker kill` if `docker stop` takes too long.
+
+![Stop](images/Stop2.png?raw=true "Title")
